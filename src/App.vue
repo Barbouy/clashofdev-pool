@@ -5,11 +5,11 @@
 
       <HeroBanner />
 
-      <div class="h-[600px] bg-purple rounded-lg sticky top-0" />
-      <div class="h-[600px] bg-pink rounded-lg sticky top-0" />
-      <div class="h-[600px] bg-orange rounded-lg sticky top-0" />
-      <div class="h-[600px] bg-green rounded-lg sticky top-0" />
-      <div class="h-[600px] bg-yellow rounded-lg sticky top-0" />
+      <div class="h-[600px] bg-purple rounded-[60px] sticky top-0" />
+      <div class="h-[600px] bg-pink rounded-[60px] sticky top-0" />
+      <div class="h-[600px] bg-orange rounded-[60px] sticky top-0" />
+      <div class="h-[600px] bg-green rounded-[60px] sticky top-0" />
+      <div class="h-[600px] bg-yellow rounded-[60px] sticky top-0" />
 
       <PageFooter class="" />
     </div>

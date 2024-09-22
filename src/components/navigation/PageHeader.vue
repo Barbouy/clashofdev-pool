@@ -9,7 +9,7 @@
         alt="Clash of dev logo">
 
       <span class="text-content-bold">
-        {{ scrollPercentage }}%
+        {{ Math.round(scrollPercentage) }}%
       </span>
 
       <div class="w-[54px] h-[27px] bg-dark flex justify-end rounded-full p-0.5">
@@ -35,6 +35,6 @@ const scrollPercentage = ref(0)
 
 window.addEventListener("scroll", () => {
   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight
-  scrollPercentage.value = Math.round((window.scrollY / scrollableHeight) * 100)
+  scrollPercentage.value = (window.scrollY / scrollableHeight) * 100
 })
 </script>
