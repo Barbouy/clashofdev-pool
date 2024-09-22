@@ -1,11 +1,23 @@
 <template>
-  <div class="flex items-center justify-center bg-bg-light h-dvh">
-    <img
-      src="@/assets/images/switch-circle.svg"
-      alt="switch-circle"
-      class="transition-opacity opacity-50 size-32 hover:opacity-100"
-    >
+  <div class="flex flex-col items-center h-dvh scroll-smooth">
+    <div class="w-full max-w-[1440px] p-4 lg:p-8 relative">
+      <PageHeader class="sticky z-50 top-4 lg:top-8" />
+
+      <HeroBanner />
+
+      <div class="h-[600px] bg-purple rounded-lg sticky top-0" />
+      <div class="h-[600px] bg-pink rounded-lg sticky top-0" />
+      <div class="h-[600px] bg-orange rounded-lg sticky top-0" />
+      <div class="h-[600px] bg-green rounded-lg sticky top-0" />
+      <div class="h-[600px] bg-yellow rounded-lg sticky top-0" />
+
+      <PageFooter class="" />
+    </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import PageHeader from "@/components/navigation/PageHeader.vue"
+import PageFooter from "@/components/navigation/PageFooter.vue"
+import HeroBanner from "@/components/navigation/HeroBanner.vue"
+</script>

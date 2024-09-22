@@ -7,7 +7,17 @@ export default [
   ...pluginVue.configs["flat/recommended"],
   {
     rules: {
-      "vue/html-closing-bracket-newline": "off",
+      "quotes": ["error", "double"],
+      "vue/html-closing-bracket-newline": [
+        "error", {
+          "singleline": "never",
+          "multiline": "never",
+          "selfClosingTag": {
+            "singleline": "never",
+            "multiline": "never"
+          }
+        }
+      ]
     }
   }
 ]
