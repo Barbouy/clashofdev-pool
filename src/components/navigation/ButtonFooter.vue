@@ -9,10 +9,10 @@
     <div
       class="flex flex-col py-10 transition-all duration-300 ease-out"
       :class="{'blur': isHover}">
-      <strong class="text-header-desktop">
+      <strong class="text-header-mobile lg:text-header-desktop">
         Click me ?
       </strong>
-      <strong class="text-header-desktop">
+      <strong class="text-header-mobile lg:text-header-desktop">
         Might enter the finals
       </strong>
 
