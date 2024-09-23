@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-between py-4">
+    class="flex justify-between py-8">
     <img
       class="h-[27px] hover:rotate-12 transition-transform hover:scale-150"
       :src="Logo"
@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-import Logo from "@/assets/images/logo.svg"
+import Logo from "@/assets/images/logo.svg?image"
 import { ref } from "vue";
 
 const isHover = ref(false)

@@ -12,10 +12,15 @@
         {{ Math.round(scrollPercentage) }}%
       </span>
 
-      <div class="w-[54px] h-[27px] bg-dark flex justify-end rounded-full p-0.5">
+      <div class="w-[54px] h-[27px] bg-dark flex justify-end rounded-full p-0.5 group">
         <img
           :src="SwitchCircle"
           alt="Switch circle">
+        <div class="absolute flex flex-col gap-1 transition-all duration-300 ease-out opacity-0 top-7 group-hover:opacity-100 blur-sm group-hover:blur-0 max-w-48 group/apologize">
+          <span class="text-right text-content-medium">No easter egg here...</span>
+          <span class="text-right text-content-medium opacity-60">It take a lot of time and I started friday at 11p.m. so... :(</span>
+          <span class="text-right transition-all duration-300 ease-out opacity-0 text-content-medium group-hover/apologize:opacity-40">Sorry...</span>
+        </div>
       </div>
     </div>
 
@@ -28,8 +33,8 @@
 
 <script setup>
 import { computed, ref } from "vue"
-import Logo from "@/assets/images/logo.svg"
-import SwitchCircle from "@/assets/images/switch-circle.svg"
+import Logo from "@/assets/images/logo.svg?image"
+import SwitchCircle from "@/assets/images/switch-circle.svg?image"
 
 const scrollPercentage = ref(0)
 

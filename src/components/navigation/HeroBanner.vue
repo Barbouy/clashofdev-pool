@@ -1,7 +1,25 @@
 <template>
-  <div class="flex flex-col justify-center gap-44 py-44 relative">
-    <div class="relative flex items-center">
-      <div class="flex flex-col z-10">
+  <div class="relative flex flex-col justify-center gap-20 lg:gap-44">
+    <div class="relative flex flex-col items-center gap-20 lg:flex-row">
+      <div class="flex flex-col lg:hidden">
+        <div class="flex items-center gap-6">
+          <strong class="text-header-mobile">
+            Que le
+          </strong>
+          <img
+            :src="Decoration"
+            alt="Decoration">
+        </div>
+        <strong class="text-header-mobile">
+          plus fort,
+        </strong>
+        <strong class="italic text-header-mobile">
+          l'emporte!
+        </strong>
+      </div>
+
+
+      <div class="z-10 flex-col hidden lg:flex">
         <strong class="text-header-desktop">
           Que le plus fort,
         </strong>
@@ -17,20 +35,14 @@
       </div>
   
       <img
-        class="absolute w-96 right-0 "
+        class="right-0 lg:absolute w-96 "
         :src="CardHero"
         alt="Card hero">
     </div>
-
-    <ImageScroll
-      :source="Banner"
-      alt="ScrollImage" />
   </div>
 </template>
 
 <script setup>
-import Banner from "@/assets/images/banner.svg"
-import CardHero from "@/assets/images/card-hero.svg"
-import Decoration from "@/assets/images/decoration.svg"
-import ImageScroll from "@/components/ui/ImageScroll.vue"
+import CardHero from "@/assets/images/card-hero.svg?image"
+import Decoration from "@/assets/images/decoration.svg?image"
 </script>
