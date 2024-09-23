@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Inter', 'serif'],
+      "sans": ["Inter", "serif"],
     },
     fontSize: {
       "content-medium": ["12px", {
@@ -27,29 +27,38 @@ export default {
       }],
     },
     colors: {
-      "bg-light": "#F3F3F1",
-      "bg-dark": "#262625",
-      "bg-purple": "#EBEDFF",
-      "fg-purple": "#262625",
-      "border-purple": "#8A92E3",
-      "bg-pink": "#FFEDF5",
-      "fg-pink": "#F588B9",
-      "border-pink": "#D6699A",
-      "bg-green": "#ECFFCE",
-      "fg-green": "#A2B87E",
-      "border-green": "#95AE6D",
-      "bg-blue": "#BADAFF",
-      "fg-blue": "#6B93C0",
-      "border-blue": "#6B93C0",
-      "bg-yellow": "#FFFAC2",
-      "fg-yellow": "#CAC48E",
-      "border-yellow": "#C2BB82",
-      "bg-orange": "#FFBCAB",
-      "fg-orange": "#F28164",
-      "border-orange": "#D46F55",
       "light": "#F3F3F1",
       "dark": "#262625",
+      "purple": "#EBEDFF",
+      "fg-purple": "#9FA8FE",
+      "bd-purple": "#8A92E3",
+      "pink": "#FFEDF5",
+      "fg-pink": "#F588B9",
+      "bd-pink": "#D6699A",
+      "green": "#ECFFCE",
+      "fg-green": "#A2B87E",
+      "bd-green": "#95AE6D",
+      "blue": "#BADAFF",
+      "fg-blue": "#6B93C0",
+      "bd-blue": "#6B93C0",
+      "yellow": "#FFFAC2",
+      "fg-yellow": "#CAC48E",
+      "bd-yellow": "#C2BB82",
+      "orange": "#FFBCAB",
+      "fg-orange": "#F28164",
+      "bd-orange": "#D46F55",
     },
+    extend: {
+      animation: {
+        "scroll-left": "scroll-left 30s linear infinite",
+      },
+      keyframes: {
+        "scroll-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+    }
   },
   plugins: [],
 }
