@@ -11,7 +11,7 @@ import SwitchIcon from "@/assets/icons/switch.svg?component"
 import BoostedImage from "@/assets/images/boosted.png"
 import SmileyIcon from "@/assets/icons/smiley.svg?component"
 
-class ItemService {
+class ItemsService {
   static getItems() {  
     return [
       {
@@ -78,4 +78,4 @@ class ItemService {
   }
 }
 
-export default ItemService;
+export default ItemsService;

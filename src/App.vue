@@ -87,12 +87,12 @@ import PageFooter from "@/components/navigation/PageFooter.vue"
 import HeroBanner from "@/components/navigation/HeroBanner.vue"
 import ImageScroll from "@/components/ui/ImageScroll.vue"
 import ItemCard from "@/components/ui/ItemCard.vue"
-import ItemService from "@/services/ItemService.js"
+import ItemsService from "@/services/ItemsService.js"
 import SwitchCircle from "@/assets/images/switch-circle.svg?image"
 import SmileyIcon from "@/assets/icons/smiley.svg?image"
 import { ref } from "vue"
 
-const items = ItemService.getItems()
+const items = ItemsService.getItems()
 const isNextStepOpen = ref(false)
 const isOverflowHidden = ref(false)
 const isNextTitleVisible = ref(false)
